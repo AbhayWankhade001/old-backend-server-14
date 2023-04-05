@@ -221,7 +221,8 @@ const bankDetailsSchema = new mongoose.Schema({
   },
   acctype: {
     type: String,
-    required: true
+    required: true,
+      enum: ['Savings', 'Current']
   },
   bankname: {
     type: String,
